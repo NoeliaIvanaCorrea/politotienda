@@ -1,0 +1,41 @@
+.main-nosotras .fila {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.main-nosotras .invertida {
+    flex-direction: row-reverse;
+}
+.main-nosotras .parrafo {
+    width: 70%; 
+    color: $text-color;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.6;
+}
+.main-nosotras .img {
+    width: 25%; 
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid darkgoldenrod;
+}
+@media (max-width: 768px) {
+.main-nosotras .fila,
+.main-nosotras .invertida {
+    flex-direction: column;
+    align-items: center;
+}
+.main-nosotras .img,
+.main-nosotras .parrafo {
+    width: 100%;
+    text-align: center;
+}
+.main-nosotras .parrafo {
+    font-size: 18px;
+}
+}

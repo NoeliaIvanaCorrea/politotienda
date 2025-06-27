@@ -1,0 +1,55 @@
+main{
+    .grid {
+        display: grid;
+        grid-template-areas: 
+        "h1 h2"
+        "v1 v2"
+        "c1 c2";
+        gap: 25px;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    @media (max-width: 768px) {
+    .grid {
+        grid-template-areas: 
+            "h1"
+            "h2"
+            "v1"
+            "v2"
+            "c1"
+            "c2";
+        }
+    }
+    .h{
+        height: 350px;
+        width: auto;
+    }
+    .v{
+        height: 350px;
+        width: auto;
+    }
+    .c{
+        height: 350px;
+        width: auto; 
+    }
+    .h1{
+        grid-area: h1;
+    }
+    .h2{
+        grid-area: h2;
+    }
+    .v1{
+        grid-area: v1;
+    }
+    .v2{
+        grid-area: v2;
+    }
+    .c1{
+        grid-area: c1;
+    }
+    .c2{
+        grid-area: c2;
+    }
+}

@@ -1,0 +1,33 @@
+@mixin logosredes-size {
+    width: 10px;
+    height: 10px;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #c1b894;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    .footer-left {     
+        font-size: 16px;
+        color: darkgoldenrod;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+    }
+    .footer-center{
+    @extend .footer-left;
+    }
+    .footer-right{
+    @extend .footer-left; 
+    }
+    .logosredes{
+    @include logosredes-size;
+    }
+}

@@ -1,0 +1,60 @@
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    .titulo{
+        font-size: 35px;
+        color: $text-color;
+        font-weight: 750;
+        text-align: center;
+    }
+    .subtitulo{
+        color: $text-color;
+        font-weight: 650;
+        text-align: center;
+    }
+    ul li{
+        list-style: none;
+    }
+    ul li a{
+        text-decoration: none;
+        color: $text-color;
+        font-size: 25px;
+    }
+    .logo{
+        width: 200px;
+        height: auto;
+    }
+    .whatsapp{
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+    }
+    .logow {
+        width: 65px;
+        height: auto;
+    }
+    .Home {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 10px; 
+    }
+    .homeimg {
+        width: 65px;
+        height: auto;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            animation: vibrate 0.3s linear infinite;
+        }
+    }
+}
+@keyframes vibrate {
+    0%   { transform: translate(0); }
+    20%  { transform: translate(-2px, 2px); }
+    40%  { transform: translate(-2px, -2px); }
+    60%  { transform: translate(2px, 2px); }
+    80%  { transform: translate(2px, -2px); }
+    100% { transform: translate(0); }
+}

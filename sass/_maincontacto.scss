@@ -1,0 +1,27 @@
+.parrafo {
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 1rem;
+    color: $text-color;
+}
+.formulario {
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 400px;
+}
+.formulario input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.maps {
+    display: block;
+    margin: 2rem auto;
+    max-width: 90%;
+    height: 300px;
+    border: none;
+}
