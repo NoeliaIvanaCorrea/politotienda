@@ -1,8 +1,8 @@
-@use "variables"; 
-@use "header";
-@use "footer"; 
-@use "mainindex"; 
-@use "mainnosotras"; 
-@use "maintienda"; 
-@use "maincarrito";  
-@use "maincontacto"; 
+@import 'variables';
+@import 'header';
+@import "footer"; 
+@import "mainindex"; 
+@import "mainnosotras"; 
+@import "maintienda"; 
+@import "maincarrito";  
+@import "maincontacto"; 

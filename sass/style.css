@@ -20,7 +20,7 @@ header {
 header .titulo {
   font-size: 35px;
   color: darkgoldenrod;
-  font-weight: 750;
+  font-weight: 700;
   text-align: center;
 }
 header .subtitulo {
@@ -98,9 +98,7 @@ footer {
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
   z-index: 100;
 }
-footer .footer-left,
-footer .footer-center,
-footer .footer-right {
+footer .footer-left, footer .footer-right, footer .footer-center {
   font-size: 16px;
   color: darkgoldenrod;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
