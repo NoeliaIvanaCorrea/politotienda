@@ -1,3 +1,5 @@
+@use "variables";
+// Contenedor principal
 main{
     .grid {
         display: grid;
@@ -10,7 +12,8 @@ main{
         align-items: center;
         justify-content: center;
         justify-items: center;
-    }
+        }
+        // Adaptación para pantallas pequeñas (max-width 768px)
     @media (max-width: 768px) {
     .grid {
         grid-template-areas: 
@@ -25,14 +28,20 @@ main{
     .h{
         height: 350px;
         width: auto;
+        border: 2px solid darkgoldenrod;
+        border-radius: 10px;
     }
     .v{
         height: 350px;
         width: auto;
+        border: 2px solid darkgoldenrod;
+        border-radius: 10px;
     }
     .c{
         height: 350px;
         width: auto; 
+        border: 2px solid darkgoldenrod;
+        border-radius: 10px;
     }
     .h1{
         grid-area: h1;

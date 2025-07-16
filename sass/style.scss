@@ -1,8 +1,16 @@
-@import 'variables';
-@import 'header';
-@import "footer"; 
-@import "mainindex"; 
-@import "mainnosotras"; 
-@import "maintienda"; 
-@import "maincarrito";  
-@import "maincontacto"; 
+// Importación de variables globales 
+@use 'variables';
+// Importación de estilos del header (cabecera del sitio)
+@use 'header';
+// Importación de estilos del footer (pie de página)
+@use "footer"; 
+// Importación de estilos específicos para la página principal (index)
+@use "mainindex"; 
+// Importación de estilos para la sección "Nosotras"
+@use "mainnosotras"; 
+// Importación de estilos para la tienda (productos, catálogo)
+@use "maintienda"; 
+// Importación de estilos para subpágina carrito de compras
+@use "maincarrito";  
+// Importación de estilos para la página de contacto
+@use "maincontacto"; 

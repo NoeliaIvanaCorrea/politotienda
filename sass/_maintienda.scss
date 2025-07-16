@@ -1,3 +1,5 @@
+@use "variables";
+// Estilos para cada tarjeta de producto dentro del contenedor
 .contenedor .product-card{ 
     display: flex; 
     flex-direction: column;
@@ -6,8 +8,9 @@
     box-shadow: 0 2px 5px rgba(0,0, 0, 0.1);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-top: auto;
-    color: $text-color;
+    color: variables.$text-color;
 }
+// Contenedor principal que aloja las tarjetas de productos
 .contenedor {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
@@ -17,11 +20,13 @@
     margin: 0 auto;
     padding: 1rem;
 }
+// Adaptaciones para pantallas medianas (tablets)
 @media (max-width: 900px) {
 .contenedor {
     grid-template-columns: repeat(2, 1fr);
 }
 }
+// Adaptaciones para pantallas pequeñas (móviles)
 @media (max-width: 600px) {
 .contenedor {
     grid-template-columns: 1fr;

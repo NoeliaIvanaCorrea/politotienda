@@ -1,3 +1,4 @@
+@use "variables";
 .contenedor .product-card img{
     width: 100%;
     max-width: 300px;
@@ -6,9 +7,10 @@
 .contenedor .precio{
     font-weight: 700;
     font-size: 20px;
-    color: $text-color;
+    color: variables.$text-color;
     margin-top: 10px;
 }
+// Contenedor principal del carrito de compras
 .main-carrito {
     display: flex;
     justify-content: center;
@@ -16,6 +18,7 @@
     margin-top: 40px;
     flex-wrap: wrap;
 }
+// Adaptación para pantallas pequeñas (tablets y móviles)
 @media (max-width: 768px) {
     .main-carrito {
         flex-direction: column;
